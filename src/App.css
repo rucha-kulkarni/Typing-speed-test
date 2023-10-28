@@ -1,18 +1,199 @@
-.App{
-  margin-top: 100px;
-  width: 80vw;
-  margin-inline: auto;
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+* {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header{
-  display: flex;
-  
-  justify-content: space-between;
-  align-items: center;
+.app {
+    margin-top: 100px;
+    width: 80vw;
+    margin-inline: auto;
 }
 
-.row-1{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .left h1 {
+    font-family: "Black Ops One", cursive;
+    font-size: 30px;
+}
+
+.header .left svg,
+.header .right svg {
+    fill: white;
+    width: 25px;
+}
+
+.typingbox {
+    margin-top: 20px;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-1 .buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.row-1 .buttons button {
+    border: none;
+}
+
+.text-box {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.text-box .word {
+    margin: 3px;
+}
+
+.text-box .word .character {
+    color: grey;
+    font-size: 24px;
+    margin-right: 1px;
+    font-family: cursive;
+}
+
+.row-2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.row-2 button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.row-2 svg {
+    width: 30px;
+    fill: white;
+}
+
+.row-3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.row-3 button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.row-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.row-4 .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.row-4 .buttons button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0px 30px;
+}
+
+
+.themeMode #themes {
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.themeMode #themes option {
+    color: black;
+    background-color: white;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.signup-container > div {
+    width: 90%;
+}
+
+.signup-container > div > label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup-container > div > input {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+
+.signup-container > button {
+    padding: 10px 30px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
 }
